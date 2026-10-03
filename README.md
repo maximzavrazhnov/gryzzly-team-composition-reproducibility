@@ -79,4 +79,4 @@ The full manuscript is intentionally not duplicated in this repository. Final po
 
 ## License
 
-No repository-level software license is granted by default. Add a `LICENSE` file only after confirming co-author, institutional and publication requirements.
+No repository-level software license is granted by default.
