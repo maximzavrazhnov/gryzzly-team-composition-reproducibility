@@ -69,10 +69,6 @@ Final checkpoints include:
 
 ![Formation alignment](paper/figures/figure_02_formation_alignment.png)
 
-## Relation to the earlier project
-
-This repository is **not** the earlier Big-Data / 7×S-Score / modified-Shapley prototype already published separately as `team-formation-pipeline`. It corresponds to the later intensive cooperative-game study with point-in-time histories, partial pooling, rolling-origin validation and a different characteristic-function interpretation.
-
 ## Manuscript status
 
 The full manuscript is intentionally not duplicated in this repository. Final portal-ready metadata and numerical provenance are preserved in `paper/`.
