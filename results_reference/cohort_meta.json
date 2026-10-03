@@ -1,0 +1,83 @@
+{
+  "observation_end": "2024-10-10T14:29:25.575055+00:00",
+  "maturity_cutoff": "2024-07-12T14:29:25.575055+00:00",
+  "chosen_min_prior_declarations": 10,
+  "activity_window_days": 56,
+  "final_projects": 2682,
+  "final_organizations": 157,
+  "candidate_rows": 36174,
+  "unique_candidates": 2025,
+  "overrun_rate": 0.35272184936614465,
+  "threshold_scan": [
+    {
+      "min_decl": 5,
+      "projects": 2782,
+      "organizations": 163,
+      "overrun_rate": 0.3554996405463695,
+      "median_pool": 11.0
+    },
+    {
+      "min_decl": 10,
+      "projects": 2682,
+      "organizations": 157,
+      "overrun_rate": 0.35272184936614465,
+      "median_pool": 11.0
+    },
+    {
+      "min_decl": 20,
+      "projects": 2522,
+      "organizations": 149,
+      "overrun_rate": 0.3501189532117367,
+      "median_pool": 11.0
+    },
+    {
+      "min_decl": 50,
+      "projects": 2183,
+      "organizations": 130,
+      "overrun_rate": 0.3362345396243701,
+      "median_pool": 12.0
+    }
+  ],
+  "funnel": [
+    {
+      "step": "all_project_records",
+      "projects": 71792,
+      "organizations": 2548
+    },
+    {
+      "step": "planned_duration_gt_0",
+      "projects": 22290,
+      "organizations": 1566
+    },
+    {
+      "step": "has_valid_declarations",
+      "projects": 19847,
+      "organizations": 1052
+    },
+    {
+      "step": "elapsed_duration_gt_0",
+      "projects": 19777,
+      "organizations": 1040
+    },
+    {
+      "step": "mature_90d_by_available_at",
+      "projects": 15405,
+      "organizations": 979
+    },
+    {
+      "step": "observed_team_size_2_20",
+      "projects": 9600,
+      "organizations": 476
+    },
+    {
+      "step": "no_declaration_record_before_project_creation",
+      "projects": 8974,
+      "organizations": 472
+    },
+    {
+      "step": "no_workday_before_project_calendar_day",
+      "projects": 5297,
+      "organizations": 395
+    }
+  ]
+}

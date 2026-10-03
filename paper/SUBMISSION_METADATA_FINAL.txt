@@ -1,0 +1,64 @@
+π-ECONOMY PORTAL METADATA — FINAL AUDIT COPY/PASTE SOURCE
+Synchronized to manuscript: v33 FinalAudit
+Audit date: 10 August 2026
+
+ENGLISH TITLE
+Intensive Cooperative Game for Project Team Composition from Digital Traces
+
+RUSSIAN TITLE
+Интенсивная кооперативная игра для формирования состава проектных команд по цифровым следам
+
+AUTHORS
+Andrey Aleksandrovich Zaytsev — Doctor of Economics, Professor; Professor, Graduate School of Industrial Economics, Institute of Industrial Management, Economics and Trade, Peter the Great St. Petersburg Polytechnic University, 29 Polytechnicheskaya St., St. Petersburg, 195251, Russia; E-mail: andrey_z7@mail.ru; ORCID: 0000-0002-4372-4207.
+
+Maxim Vyacheslavovich Zavrazhnov — Postgraduate Student, Graduate School of Industrial Economics; Laboratory Assistant, Research Laboratory “Polytech-Invest”, Institute of Industrial Management, Economics and Trade, Peter the Great St. Petersburg Polytechnic University, 29 Polytechnicheskaya St., St. Petersburg, 195251, Russia; E-mail: mr.megazavr13@mail.ru; ORCID: 0009-0000-8070-9084.
+
+Corresponding author: Andrey Aleksandrovich Zaytsev — andrey_z7@mail.ru
+
+ENGLISH ABSTRACT
+Longitudinal digital traces provide an empirical basis for project-team composition, but historical candidate records are sparse, context-dependent, and vulnerable to retrospective information leakage. The purpose of this study is to develop and empirically validate an intensive cooperative-game model for fixed-cardinality project-team composition whose candidate histories are reconstructed point in time, while separating composition from the independent staffing-level decision. The analysis uses the Gryzzly time-tracking dataset. Point-in-time feature reconstruction combined with a retrospective representability requirement yields a primary cohort of 2,682 mature, history-rich projects from 157 source-schema workspaces, 36,174 project–candidate observations, and 2,025 candidates. Candidate information combines prior-project experience with an empirical Bayes-style partially pooled historical plan–realization profile. The project outcome is the natural logarithm of recorded planned labor duration divided by realized labor duration; it is interpreted as a plan–realization labor-ratio outcome rather than productivity, technical efficiency, or project success. Rolling-origin evaluation for 2022–2024 shows that prior-project experience reduces mean absolute error from 0.6972 to 0.6603 relative to the context and realized-cardinality benchmark. Adding the partially pooled profile to a strong historical benchmark reduces mean absolute error from 0.6562 to 0.6214, with a workspace-cluster confidence interval entirely below zero. The parsimonious final specification achieves mean absolute error 0.6197, root mean squared error 0.8241, and R² 0.268 on 2,107 out-of-fold projects. The pooled historical profile remains informative after removing realized team size, after additionally removing recorded planned duration, and under a conservative training-label-availability embargo; the isolated experience increment is less stable under the strongest embargo. On 719 projects from 99 workspaces absent from earlier coefficient estimation, the final model retains an advantage over the realized-cardinality benchmark, while its smaller advantage over the strong historical benchmark is not statistically confirmed. Model-score formation alignment shows that observed teams exceed the random same-size expectation in 77.27% of projects; the median percentile is 83.33, and 14.57% coincide with at least one tie-aware model-optimal same-size composition. For a fixed staffing level, the normalized mean game is optimized by top-k candidate scores, while a closed-form Shapley value attributes only the composition term. The practical contribution is human-supervised decision support after role, capacity, and eligibility constraints have been defined. Future work should use prospectively versioned staffing and labor plans, external validation, hierarchical pooling, and explicit role, capacity, fairness, and privacy constraints.
+
+RUSSIAN ABSTRACT
+Продольные цифровые следы создают эмпирическую основу для выбора состава проектных команд, однако исторические данные о кандидатах разрежены, зависят от организационного контекста и подвержены риску ретроспективной информационной утечки. Цель исследования — разработать и эмпирически проверить интенсивную кооперативно-игровую модель выбора состава проектной команды при заранее заданной численности, в которой история кандидатов реконструируется на момент принятия решения, а выбор состава отделяется от самостоятельной задачи определения численности. Эмпирическая база — набор Gryzzly с данными учета рабочего времени. Реконструкция признаков по принципу point-in-time совместно с ретроспективным условием представимости фактической команды формирует основную выборку из 2682 зрелых проектов с насыщенной историей, относящихся к 157 рабочим пространствам исходной схемы, 36 174 наблюдений «проект — кандидат» и 2025 кандидатов. Информация о кандидате объединяет опыт предыдущих проектов и частично сглаженный исторический профиль соотношения «план — реализация», построенный по эмпирико-байесовской логике. Результат проекта определяется как натуральный логарифм отношения записанной плановой трудоемкости к фактической трудоемкости и интерпретируется как показатель соотношения «план — реализация», а не как производительность, техническая эффективность или успех проекта. В скользящей временной валидации за 2022–2024 гг. учет опыта предыдущих проектов снижает среднюю абсолютную ошибку с 0,6972 до 0,6603 относительно контекстной модели с фактической численностью. Добавление частично сглаженного исторического профиля к сильной исторической базовой модели снижает MAE с 0,6562 до 0,6214; кластерный по рабочим пространствам доверительный интервал полностью расположен ниже нуля. Итоговая парсимоничная спецификация на 2107 вневыборочных проектах достигает MAE 0,6197, RMSE 0,8241 и R² 0,268. Вклад сглаженного исторического профиля сохраняется после исключения фактического размера команды, после дополнительного исключения записанной плановой трудоемкости и при консервативном эмбарго доступности обучающих целевых значений; изолированный вклад опыта при наиболее строгом эмбарго менее устойчив. На 719 проектах из 99 рабочих пространств, отсутствовавших при более ранней оценке коэффициентов, итоговая модель сохраняет преимущество перед контекстной моделью с численностью, тогда как дополнительное преимущество перед сильной исторической моделью статистически не подтверждено. Проверка соответствия фактического формирования модельным оценкам показывает, что в 77,27% проектов наблюдаемая команда превосходит случайное ожидание для коалиций той же численности; медианный процентиль равен 83,33, а 14,57% команд совпадают хотя бы с одним модельно-оптимальным составом с учетом равенства оценок. При фиксированной численности нормированная mean-game оптимизируется выбором top-k кандидатов, а замкнутая формула значения Шепли распределяет только композиционный компонент. Практическая ценность состоит в поддержке решения под контролем человека после задания ролей, доступности и иных ограничений. Дальнейшие исследования должны использовать проспективно версионированные планы численности и трудоемкости, внешнюю валидацию, иерархическое сглаживание и явные ограничения ролей, загрузки, справедливости и приватности.
+
+ENGLISH KEYWORDS
+project team composition; cooperative game theory; digital traces; point-in-time reconstruction; partial pooling; empirical Bayes; Shapley value; rolling-origin validation; plan–realization outcome
+
+RUSSIAN KEYWORDS
+состав проектной команды; кооперативная теория игр; цифровые следы; point-in-time реконструкция; частичное сглаживание; эмпирический Байес; значение Шепли; скользящая временная валидация; результат «план — реализация»
+
+ARTICLE TYPE
+Original research article.
+
+SUGGESTED SECTION
+Economic & mathematical methods and models / Экономико-математические методы и модели.
+
+FUNDING
+[AUTHOR CONFIRM] If no specific funding applies: The study received no specific external funding.
+
+CONFLICT OF INTEREST
+[AUTHOR CONFIRM] The authors declare no conflict of interest.
+
+AUTHORSHIP / EXCLUSIVITY
+[AUTHOR CONFIRM] All authors approved the final submitted version, author order and corresponding-author designation.
+[AUTHOR CONFIRM] The manuscript has not been published previously and is not under consideration by another journal.
+[AUTHOR CONFIRM] Confirm the CRediT contribution statement before entering it; no role allocation is inferred in this package.
+[AUTHOR VERIFY] Confirm both ORCID records in the portal before final submission.
+
+DATA AVAILABILITY
+The study uses the Gryzzly longitudinal time-tracking dataset. Source data are not redistributed in the submission package. Reproduction Package v03 preserves analytical scripts, frozen reference outputs, regenerated Table 2 composition-ablation outputs, expected-results checks and SHA-256 integrity information. The raw Gryzzly source tables are required separately for a complete raw-data rerun. No public repository DOI/URL is claimed until the package is deposited in a persistent repository.
+
+CODE / REPRODUCIBILITY
+Reproduction Package v03 is the current local archive. It freezes scripts 01–18, cohort and feature construction, rolling-origin evaluation, strict point-in-time and target-component sensitivities, workspace-held-out evaluation, tie-aware formation analysis, Shapley verification, training-label embargo sensitivity, and regenerated Table 2 composition-ablation outputs. Retain it with the verification log and provide it to the editor/reviewer on request unless it is deposited publicly before submission.
+
+AI-USE DISCLOSURE
+OpenAI ChatGPT was used for language editing, restructuring, methodological audit and bibliographic assistance. The authors retain full responsibility for the final numerical results, citations, mathematical statements and interpretations. No AI-generated tables, figures or data arrays are included in the submitted materials. The manuscript contains this disclosure as a true Word footnote in Section 6, Acknowledgements.
+
+BIBLIOGRAPHY FOR PORTAL
+Use BOTH sequential lists supplied in this kit:
+05_References_Cyrillic_30sources.txt — Cyrillic/original-language representation.
+06_References_Latin_30sources.txt — Latin/transliterated representation.
+Both use exactly the same [1]–[30] order as first appearance in the manuscript.
+
+FIGURES
+Editable chart objects remain embedded in the manuscript. Separate TIFF copies of Figures 1 and 2 are supplied for editorial convenience or if the portal/editor requests separate raster files; the current official formatting page primarily requires charts/graphs inserted in the text to remain editable.

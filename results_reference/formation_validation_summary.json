@@ -1,0 +1,24 @@
+{
+  "projects": 2107,
+  "organizations": 128,
+  "share_observed_above_pool_mean": 0.7726625533934504,
+  "mean_observed_minus_random": 0.10546677163201217,
+  "median_observed_random_percentile": 0.8325,
+  "share_observed_top_quartile_random": 0.5904129093497864,
+  "share_observed_exact_optimal": 0.14285714285714285,
+  "median_jaccard_optimal": 0.3333333333333333,
+  "mean_optimal_gap": 0.13900649007434826,
+  "median_optimal_gap": 0.1151752221394674,
+  "ci_obs_minus_random": [
+    0.06292418003687789,
+    0.1661817722091133
+  ],
+  "ci_optimal_gap": [
+    0.1163438050422719,
+    0.1559265378275103
+  ],
+  "ci_mean_random_percentile": [
+    0.7101823845116534,
+    0.7942944232043232
+  ]
+}
