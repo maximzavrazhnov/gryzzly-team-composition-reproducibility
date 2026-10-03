@@ -1,0 +1,29 @@
+﻿Article location,Claim,Reported/verified value,Calculation source,Audit status
+P012,Published Gryzzly descriptor,"4.4 million interactions; 12,447 users; 173,323 tasks; 50,759 projects","Reference [27], Scientific Data 12:578 (2025); local raw task/project counts independently agree",EXTERNAL+LOCAL VERIFIED
+P023,Raw/valid declaration counts,"4,446,669 raw; 4,428,885 valid; 173,323 tasks; 50,759 projects",fresh rerun work/stageF/base_meta.json,FRESH RERUN VERIFIED
+P024,Temporal anomaly bounds,max work date 2030-01-01; max valid declaration-created 2024-10-10 14:29:25.575055 UTC,fresh rerun work/stageF/base_meta.json,FRESH RERUN VERIFIED
+P029-P030,Cohort size and funnel,"2,682 projects; 157 workspaces; 36,174 project-candidate rows; 2,025 candidates; full funnel 71,792→...→5,297→2,682",fresh rerun work/stageF/cohort_meta.json; results_reference/cohort_meta.json,FRESH RERUN VERIFIED
+P029,Threshold scan,"56-day window; min 10 prior declarations; rule retains >=2,500 projects and >=150 workspaces",fresh rerun work/stageF/cohort_meta.json threshold scan,FRESH RERUN VERIFIED
+P030,Focal 90-day maturity,observation end 2024-10-10 14:29:25.575055 UTC; cutoff 2024-07-12 14:29:25.575055 UTC,fresh rerun work/stageF/cohort_meta.json,FRESH RERUN VERIFIED
+P048,Historical-profile sparsity,39.87% candidate rows; 31.96% selected-member rows with no mature prior outcome,fresh rerun work/stageF/intensive_eb_audit.json,FRESH RERUN VERIFIED
+P048,Tau selection,inner 4-fold TimeSeriesSplit selects tau=5 in all 2022/2023/2024 outer training periods,fresh rerun work/stageF/eb_selection_diagnostic.csv and model code,FRESH RERUN VERIFIED
+P075,Validation design,"outer 2022–2024; inner TimeSeriesSplit(4,gap=0); alpha grid; bootstrap draw counts","scripts/09_intensive_eb_game.py, 14_intensive_game_main.py, sensitivity scripts",CODE VERIFIED
+P078,Outer split counts,"575 pre-2022 train; tests 534/1,063/510; 2,107 OOF",fresh rerun model result files / aggregate,FRESH RERUN VERIFIED
+P079,Formation computation,"1,792 exact; 315 Monte Carlo; 2,000 draws otherwise",fresh corrected formation rerun; results_reference/formation_validation_summary_corrected.json,FRESH RERUN VERIFIED
+P083,Pair diagnostic,"417,289 candidate pairs; 9,735 observed pairs; no-prior-joint-work 10.0434% vs 1.38675%",fresh rerun work/stageF/pair_audit.json,FRESH RERUN VERIFIED
+P085 / Conclusion 1,H1,"B1 MAE .6971577; I1 .6602598; delta -.0368979; CI [-.0733798,-.0072328]; 99.3% favorable",fresh rerun work/stageF/intensive_eb_nested_aggregate.csv + intensive_eb_cluster_bootstrap.csv,FRESH RERUN VERIFIED
+P087 / Conclusion 2,H2,"I2 MAE .6561740; I4 .6214366; delta -.0347374; CI [-.0621046,-.0159385]",same nested aggregate/bootstrap files,FRESH RERUN VERIFIED
+P088,EB decomposition,"I2 .656174; workspace-prior .629573; candidate pooled .621437; incremental delta -.008137 CI [-.012873,-.003660]",fresh rerun work/stageF/eb_decomposition_aggregate.csv + bootstrap.csv,FRESH RERUN VERIFIED
+P090 / Conclusion 3,IG_main headline,MAE .619724853; RMSE .824110545; R2 .268170578; vs B1 -11.1069%; vs I2 -5.5548%; reported CIs,fresh rerun work/stageF/intensive_game_main_aggregate.csv + intensive_game_main_bootstrap.csv; results_reference counterparts,FRESH RERUN VERIFIED
+P091,Year MAE / coefficient directions,"2022 .683616; 2023 .602857; 2024 .587984; experience+, pooled-profile+, team-size- in all outer fits",fresh rerun work/stageF/intensive_game_main_results.csv + coefficients.csv,FRESH RERUN VERIFIED
+Table 1,All main-model rows,B1/I1/I2/I4/IG metrics plus workspace-held-out MAE,Table_01_final_v2.xlsx cross-checked against fresh rerun aggregate files,WORKBOOK+RERUN MATCH
+P096 / Conclusion 4,H3 workspace-held-out,719 projects / 99 workspaces; B1 .795310; I2 .710762; IG .687741; IG-B1 CI excludes 0; IG-I2 CI includes 0,fresh rerun aggregate + work/stageF/h2_6_unseen_workspace_bootstrap.csv; frozen expected results,FRESH RERUN VERIFIED
+P098,Binary sensitivity,AUC .675994857; AP .519742513; Brier .210039356; log loss .606856237,fresh binary recalculation from StageF exact procedure; frozen results_reference/stageG_summary.json,FRESH RECALC VERIFIED
+P099 / Fig.1,Robustness range,MAE .616704–.632405; primary 56/10/90/tau5 .619724853; contribution-share .6252385,Figure_01_fin.xlsx data sheets; original robustness outputs,SOURCE WORKBOOK VERIFIED
+P105-P106 / Table 2,Strict sensitivities,all no-size and no-size/no-planned MAE/delta/CI cells,fresh rerun h2_6_composition_ablation_* + results_reference frozen copies + Table_02_fin.xlsx,FRESH RERUN + WORKBOOK MATCH
+P108,Composition-only post hoc,"MAE .607008; RMSE .877290; R2 .170674; vs IG CI [-.0792915,.0375309]",fresh audit calculation / frozen project outputs,VERIFIED
+P114,Training-label embargo,B1 .753271; I1 .723650; I2 .717170; I4 .672606; IG .673843; H1/H2 CIs as reported,fresh run stageG/training_label_embargo_*; results_reference frozen copies,FRESH RERUN VERIFIED
+P116-P117 / Conclusion 5,H4 formation alignment,"2,107 projects/128 workspaces; 77.266%; gap .105467 CI [.062873,.165776]; percentile .833333; top quartile .597532; optimum .145705; 56 ties; Jaccard .3333; optimum gap .115175",fresh corrected formation rerun + results_reference/formation_validation_summary_corrected.json,FRESH RERUN VERIFIED
+Fig.2,Histogram,"2,107 frozen corrected project percentiles; canonical bins from corrected frozen output",Figure_02_fin.xlsx matches results_reference/figure2_bins_corrected.csv,WORKBOOK+FROZEN OUTPUT MATCH
+P120,Shapley audit,"6,268 member rows; 2,107 projects; max efficiency error 8.8818e-16; 2,101 nonconstant teams; 6 constant; median Spearman 1.0",fresh Shapley recomputation saved as shapley_observed_teams_fresh_v33_audit.csv; frozen expected results,FRESH RECALC VERIFIED
+Conclusions 1–6,All conclusion numbers and hypothesis statuses,No conclusion introduces a quantitative value absent from verified results above,cross-check against provenance rows and v33 text,VERIFIED

@@ -1,0 +1,27 @@
+{
+  "projects": 2107,
+  "workspaces": 128,
+  "exact_enumeration_projects": 1792,
+  "monte_carlo_projects": 315,
+  "share_observed_above_pool_mean": 0.7726625533934504,
+  "mean_observed_minus_random": 0.10546677163201217,
+  "median_observed_random_percentile": 0.8333333333333334,
+  "share_observed_top_quartile_random": 0.5975320360702421,
+  "share_observed_exact_any_optimal": 0.14570479354532512,
+  "projects_with_boundary_ties": 56,
+  "median_max_jaccard_optimal": 0.3333333333333333,
+  "mean_optimal_gap": 0.13900649007434826,
+  "median_optimal_gap": 0.1151752221394674,
+  "ci_observed_minus_random": [
+    0.06287334162685286,
+    0.16577594304657273
+  ],
+  "ci_optimal_gap": [
+    0.11642338410384948,
+    0.1557390762127863
+  ],
+  "ci_mean_random_percentile": [
+    0.7124686791775361,
+    0.7970027080238652
+  ]
+}
