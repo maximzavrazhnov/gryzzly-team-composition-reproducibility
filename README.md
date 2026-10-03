@@ -75,7 +75,7 @@ This repository is **not** the earlier Big-Data / 7×S-Score / modified-Shapley 
 
 ## Manuscript status
 
-The full manuscript is intentionally not duplicated in this repository. Final portal-ready metadata and numerical provenance are preserved in `paper/`. This keeps the GitHub package synchronized with the final submitted analysis without creating an accidental manuscript/preprint duplicate.
+The full manuscript is intentionally not duplicated in this repository. Final portal-ready metadata and numerical provenance are preserved in `paper/`.
 
 ## License
 
